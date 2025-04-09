@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base con clases directas */
+html {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f9fafb; /* equivalente a bg-gray-50 */
+    color: #111827;            /* equivalente a text-gray-900 */
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* equivalente a font-semibold */
+}
+
+/* Botones */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    outline: none;
+    transition: all 0.2s;
+}
+
+button:focus,
+[type='button']:focus,
+[type='reset']:focus,
+[type='submit']:focus {
+    box-shadow: 0 0 0 2px #3b82f6; /* ring-blue-500 */
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    outline: none;
+    transition: all 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* Botones personalizados */
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.btn-secondary {
+    background-color: #e5e7eb; /* bg-gray-200 */
+    color: #1f2937;            /* text-gray-800 */
+}
+
+.btn-secondary:hover {
+    background-color: #d1d5db; /* hover:bg-gray-300 */
+}
+
+.btn-danger {
+    background-color: #dc2626; /* bg-red-600 */
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b91c1c; /* hover:bg-red-700 */
+}
+
+/* Formularios */
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.375rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 0.25rem;
+}
+
+/* Tarjetas */
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+}
